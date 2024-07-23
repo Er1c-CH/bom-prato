@@ -71,7 +71,7 @@ CREATE TABLE Prato_Ingrediente (
 
 CREATE TABLE Fornecedor (
     id_fornecedor SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL
+    nome VARCHAR(100) NOT NULL,
     cnpj VARCHAR(100) UNIQUE NOT NULL
 );
 
@@ -136,9 +136,9 @@ INSERT INTO Ingrediente (nome, preco, quantidade) VALUES
 ('Alface', 2.00, 150);
 
 INSERT INTO Funcionario (nome, cpf, cargo, turno, salario, data_nascimento) VALUES
-('Ana Lima', '111.222.333-44', 'Cozinheiro', 'Manhã', 2500.00, '1985-05-15'),
-('Paulo Gonçalves', '555.666.777-88', 'Garçom', 'Tarde', 1800.00, '1990-08-20'),
-('Mariana Costa', '999.000.111-22', 'Gerente', 'Noite', 3500.00, '1980-12-30');
+('Ana Lima', '11122233344', 'Cozinheiro', 'Manhã', 2500.00, '1985-05-15'),
+('Paulo Gonçalves', '55566677788', 'Garçom', 'Tarde', 1800.00, '1990-08-20'),
+('Mariana Costa', '99900011122', 'Gerente', 'Noite', 3500.00, '1980-12-30');
 
 INSERT INTO Pedido (id_prato, id_cliente, horario_pedido) VALUES
 (1, 1, '2024-07-22 12:00:00'),
